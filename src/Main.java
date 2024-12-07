@@ -41,5 +41,19 @@ public class Main {
         System.out.println("A soma dos números de 1 até " + numero + " é: " + soma);
     }
 
+    public static void fatorial(Scanner scanner) {
+        System.out.println("Digite um número inteiro para calcular o fatorial: ");
+        int numero = scanner.nextInt();
+
+        int fatorial = 1;
+        while (numero > 0) {
+            fatorial *= numero;
+            numero--;
+        }
+
+        System.out.println("O fatorial é: " + fatorial);
+    }
+
+
 
 }
