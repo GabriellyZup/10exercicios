@@ -73,8 +73,31 @@ public class Main {
     }
 
     public static void verificarNumeroPrimo (Scanner scanner) {
-        //fazer ex4
+        System.out.println("Digite um númeor para verificar se é primo: ");
+        int numero = scanner.nextInt();
+
+        if (numero < 2) {
+            System.out.println("O número " + numero + " não é primo.");
+            return;
+        }
+
+        boolean Primo = true;
+
+        for (int divisor =2; divisor <= Math.sqrt(numero); divisor++) {
+            Primo = false;
+            break;
+        }
     }
+
+    if (Primo)
+
+    {
+        System.out.println("O número " + numero + " é primo.");
+    } else {
+        System.out.println("O numero " + numero + " não é primo.");
+    }
+
+
 
     public static void inverterNumero (Scanner scanner) {
         //fazer ex5
