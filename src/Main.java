@@ -15,7 +15,7 @@ public class Main {
                 case 2 -> fatorial(scanner);
                 case 3 -> contagemDeDigitos(scanner);
                 case 4 -> verificarNumeroPrimo(scanner);
-                case 5 -> multiplosDeNumero(scanner);
+                case 5 -> inverterNumero(scanner);
                 case 6 -> calcularPotencia(scanner);
                 case 7 -> verificarPalindromo(scanner);
                 case 8 -> multiplosDeNumeros(scanner);
@@ -53,7 +53,37 @@ public class Main {
 
         System.out.println("O fatorial é: " + fatorial);
     }
+    public static void contagemDeDigitos (Scanner scanner) {
+        //fazer ex3
+    }
 
+    public static void verificarNumeroPrimo (Scanner scanner) {
+        //fazer ex4
+    }
+
+    public static void inverterNumero (Scanner scanner) {
+        //fazer ex5
+    }
+
+    public static void calcularPotencia(Scanner scanner) {
+        //fazer ex6
+    }
+
+    public static void verificarPalindromo(Scanner scanner) {
+        //fazer ex7
+    }
+
+    public static void multiplosDeNumeros(Scanner scanner) {
+        //fazer ex8
+    }
+
+    public static void converterBinarioParaDecimal(Scanner scanner) {
+        //fazer ex9
+    }
+
+    public static void fibonacci(Scanner scanner) {
+        //fazer ex10
+    }
 
 
 }
