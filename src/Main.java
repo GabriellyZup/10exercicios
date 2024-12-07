@@ -54,7 +54,22 @@ public class Main {
         System.out.println("O fatorial é: " + fatorial);
     }
     public static void contagemDeDigitos (Scanner scanner) {
-        //fazer ex3
+        System.out.println("Digite um numero inteiro para contar dígitos: ");
+        int numero = scanner.nextInt();
+
+        int contador = 0;
+        int numeroAbsoluto = Math.abs(numero); //abs trata negativo para o loop não dar erro de tratamento
+
+        while (numeroAbsoluto > 0) {
+            numeroAbsoluto /= 10;
+            contador++;
+        }
+
+        if (contador ==0) {
+            contador =1; //para contar o 0 como 1 digito
+        }
+
+        System.out.println("O número possui " + contador + "digito");
     }
 
     public static void verificarNumeroPrimo (Scanner scanner) {
