@@ -100,12 +100,12 @@ public class Main {
 
 
     public static void inverterNumero (Scanner scanner) {
-        System.out.println("Digite um numeor para inverter ");
+        System.out.println("Digite um número para inverter ");
         int numero = scanner.nextInt();
 
         int numeroInvertido = 0;
 
-        while (numero != 0) ; {
+        while (numero != 0) {
             int digito = numero % 10; //pega ultimo digito
             numeroInvertido = numeroInvertido * 10 + digito; //adiciona o digito ao numero invertido
             numero /= 10; // remove ultimo digito
