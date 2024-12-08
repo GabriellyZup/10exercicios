@@ -123,7 +123,7 @@ public class Main {
 
         int resultado = 1; //começa no 1 pq qlqr num elevado a 0 é 1
 
-        for (int contador =1; contador <= expoente; comtador++) {
+        for (int contador = 1; contador <= expoente; contador++) {
             resultado *= base; //multiplica a base pelo resultado
         }
 
