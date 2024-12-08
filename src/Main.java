@@ -115,7 +115,19 @@ public class Main {
 
 
     public static void calcularPotencia(Scanner scanner) {
-        //fazer ex6
+        System.out.println("Digite o número base: ");
+        int base = scanner.nextInt();
+
+        System.out.println("Digite o número expoente: ");
+        int expoente = scanner.nextInt();
+
+        int resultado = 1; //começa no 1 pq qlqr num elevado a 0 é 1
+
+        for (int contador =1; contador <= expoente; comtador++) {
+            resultado *= base; //multiplica a base pelo resultado
+        }
+
+        System.out.println("O resultado de " + base + "elevado a " + expoente + " é: " + resultado);
     }
 
     public static void verificarPalindromo(Scanner scanner) {
