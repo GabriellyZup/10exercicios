@@ -179,7 +179,24 @@ public class Main {
     }
 
     public static void fibonacci(Scanner scanner) {
-        //fazer ex10
+        System.out.println("digite o número de termos para série de Fibonacci: ");
+        int termos = scanner.nextInt();
+
+        int a + 0, b = 1;
+
+        System.out.println("Série de Fibonacci: ");
+        int contador = 0
+        while (contador < termos) {
+            System.out.println(a + " ");
+            int next = a + b;
+            a = b;
+            b = next;
+            contador++;
+        }
+        System.out.println();
+
+        //termos = variavel de quantos numeors serão calc
+        //contaor = i controla qts numero da sequencia já foram exibidos.
     }
 
 
