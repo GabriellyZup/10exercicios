@@ -198,6 +198,4 @@ public class Main {
         //termos = variavel de quantos numeors serão calc
         //contaor = i controla qts numero da sequencia já foram exibidos.
     }
-
-
-}
+} //alteração para sobreescrever o readme
