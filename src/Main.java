@@ -150,24 +150,18 @@ public class Main {
         }
     }
 
-    public static void multiplosDeNumeros () {
-        Scanner scanner = new Scanner (System.in);
+    public static void multiplosDeNumeros (Scanner scanner) {
 
-        System.out.println("Digite o número base (n): ");
-        int numeroBase = scanner.nextInt();
+        System.out.println("Digite o número base: ");
+        int base = scanner.nextInt();
 
-        System.out.println("Digite o limite (m): ");
+        System.out.println("Digite o limite: ");
         int limite = scanner.nextInt();
 
-        if (numeroBase <= 0 || limite <= 0) {
-            System.out.println("Os numeros devem ser inteiros e positivos!");
-            return;
-        }
+        System.out.println("Multiplos de " + base + " até " + limite + ":");
 
-        System.out.println("Multiplos de " + numeroBase + " até " + limite + ":");
-
-        for (int multiple = numeroBase; multiple <= limite; multiple += numeroBase) {
-            System.out.println(multiple + " ");
+        for (int current = base; current <= limite; current += base) {
+            System.out.print(current + " ");
         }
 
         System.out.println();
