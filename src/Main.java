@@ -168,7 +168,14 @@ public class Main {
     }
 
     public static void converterBinarioParaDecimal(Scanner scanner) {
-        //fazer ex9
+        System.out.println("Digite um número binário para converter em decimal: ");
+        String binario = scanner.next();
+        if (binario.matches("[01]+")) { //ver se é só 0 e 1
+            int decimal = Integer.parseInt(binario, 2); //converte string binaria p decimal
+            System.out.println("O número decimal correspondente é: " + decimal);
+        } else {
+            System.out.println("Entrada invalida. Certifique-se de inserir apenas binários.");
+        }
     }
 
     public static void fibonacci(Scanner scanner) {
