@@ -131,7 +131,23 @@ public class Main {
     }
 
     public static void verificarPalindromo(Scanner scanner) {
-        //fazer ex7
+        System.out.println("Digite um número inteiro para verificar se é palindromo: ");
+        int numero = scanner.nextInt();
+
+        int numeroOriginal = numero;
+        int numeroInvertido = 0;
+
+        while (numero != 0) {
+            int digito = numero %10; //pega ultimo digito
+            numeroInvertido = numeroInvertido * 10 + digito; //constroi invertido
+            numero /= 10; //remove ultimo digito
+        }
+
+        if (numeroOriginal == numeroInvertido) {
+            System.out.println(numeroOriginal + " é um palíndromo.");
+        } else {
+            System.out.println(numeroOriginal + " não é um palíndromo.");
+        }
     }
 
     public static void multiplosDeNumeros(Scanner scanner) {
