@@ -182,10 +182,10 @@ public class Main {
         System.out.println("digite o número de termos para série de Fibonacci: ");
         int termos = scanner.nextInt();
 
-        int a + 0, b = 1;
+        int a = 0, b = 1;
 
         System.out.println("Série de Fibonacci: ");
-        int contador = 0
+        int contador = 0;
         while (contador < termos) {
             System.out.println(a + " ");
             int next = a + b;
