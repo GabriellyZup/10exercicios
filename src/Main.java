@@ -1,5 +1,6 @@
 
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -69,7 +70,7 @@ public class Main {
             contador =1; //para contar o 0 como 1 digito
         }
 
-        System.out.println("O número possui " + contador + "digito");
+        System.out.println("O número possui " + contador + " digito");
     }
 
     public static void verificarNumeroPrimo (Scanner scanner) {
@@ -82,7 +83,7 @@ public class Main {
         }
 
         boolean Primo = true;
-
+            //math classe .sqrt método de raiz quadrada
         for (int divisor = 2; divisor <= Math.sqrt(numero); divisor++) {
             if (numero % divisor == 0) {
                 Primo = false;
@@ -99,8 +100,19 @@ public class Main {
 
 
     public static void inverterNumero (Scanner scanner) {
-        //fazer ex5
+        System.out.println("Digite um numeor para inverter ");
+        int numero = scanner.nextInt();
+
+        int numeroInvertido = 0;
+
+        while (numero != 0) ; {
+            int digito = numero % 10; //pega ultimo digito
+            numeroInvertido = numeroInvertido * 10 + digito; //adiciona o digito ao numero invertido
+            numero /= 10; // remove ultimo digito
+        }
+         System.out.println("O número invertido é: " + numeroInvertido);
     }
+
 
     public static void calcularPotencia(Scanner scanner) {
         //fazer ex6
